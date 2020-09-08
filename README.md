@@ -33,7 +33,7 @@ from sklearn.metrics import mean_squared_error
 Ao realizar a Análise deste dataset, podemos observar que não há uma explicação clara das variáveis e portanto em diversas análises tive que hipotetizar o que entendia.
 Então todas as linhas que apresentavam 0 = Não e 1 = Sim.
 
-* Análise Descritiva
+# Análise Descritiva
 
 Para a realização desta análise, começei a observar a descrição análitica dos dados, desta formabpodemos observar que o nível de promessa do candidato de receber promoção dentre os 14999 apenas 21 tem chances, representando uma baixa porcentagem. 
 Em relação a realocação, observamos que metade dos funcionários irão ser realocados, uma vez que visualizamos pela média.
@@ -73,7 +73,7 @@ Verifica-se também que há uma baixa correlação de dados entre ID e Critical.
 
 Verifica-se, de forma geral, que há baixa correlação entre as variáveis. 
 
-Algumas conclusões foram:
+# Algumas conclusões foram:
 
 * Verifica que ID e Percent_remote, apresenta a maior correlação positiva entre variaveis. Ou seja, a medida que aumenta a quantidade de id, vai aumentando o trabalho remoto, isso é notório, pois na análise descritiva acima, podemos perceber que há uma porcentagem maior de pessoas que trabalham remotamente.
 Verifica-se também que há uma baixa correlação de dados entre ID e Critical.
@@ -99,7 +99,7 @@ Observa-se também que, apesar de haver um baixo índice de correlação entre a
 *Além disso, entre o número de projetos e conquistar a promoção nos ultimos 5 anos apresenta uma baixa relação negativa, ou seja,a medida que aumenta a promoção nos ultimos 5 anos na empresa a quantidade de números de projetos é menor.
 
 
-* Expectativas
+# Expectativas
 
 Os resultados foram bem diferentes do que havia previsto, geralmente o aumento do número de promoçoes influencia nas horas trabalhadas mensalmente pelo funcionário, uma vez que há mais responsabilidades.
 Geralmente, ter números de projetos pode estar associado com conquistar a promoção, pode hipotetizar que é baixa, pois os projetos não derão certos ou não foram concluídos.
@@ -122,7 +122,7 @@ Tente encontrar qual o impacto das features no modelo, quais as mais importantes
 elas podem ser interpretadas.
 *Esta é uma questão bônus e não é obrigatória
 
-Possíveis Modelagens:
+# Possíveis Modelagens:
  
 Prever se ocorrerá acidente no trabalho - Árvore de Decisão
 Prever a probabilidade de ocorrência de acidente no trabalho - Regressão Logística
@@ -134,9 +134,9 @@ A probabilidade de número de horas se ele deixaria a empresa - Regressão Logí
 Determinar a probabibilidade de o tempo gasto influenciar em conquistar uma promoção nos últimos 5 anos - Árvore de Decisão
 
 
-Modelagens Construídas
+* Modelagens Construídas
 
-Regressão Logística
+# Regressão Logística
 A Regressão Logística é uma técnica estatística que permite estimar a probabilidade associada à ocorrência de determinado evento. É um modelo que permite a predição de valores tomados por uma variável categórica, frequentemente binária.
 
 Objetivo :Qual é a probabilidade de ocorrer um acidente de trabalho?
@@ -144,12 +144,12 @@ Raciocínio
 
 O aumento da média de horas trabalhando em uma empresa pode afetar a produtividade, bem como pode comprometer com a qualidade do trabalho e com o cansaço, portanto, maiores deficits de atenção Em relação a variável a promotion_last_5years, pode conjecturar que obter uma promoção no trabalho, pode influenciar de certa forma na pressão de entregas de trabalho,similar ao mesmo pensamento foi construido com base no salário e na posição de trabalho
 
-Resultado
+* Resultado
 
 Obtive um resultado abaixo do esperado, embora a métrica do modelo foi alto. Hipótese é que há uma necessidade maior de pré-processamento dos dados e compreender melhor as variáveis disponíveis, contudo, não há uma explicação disponível. Além disso, conjectura que provavelmente é uma empresa que não tem indústria ou os funcionários inseridos não trabalham em áreas de indústrias ou em regiões com nivel de segurança máxima.Dessa forma, a probabilidade de ocorrência de acidente é baixa, tendo em vista que o modelo calcula valores iguais a zero para a totalidade dos dados analisados. Contudo, a hipótese que acredito é por que os dados estão desbalanceados, pode-se notar que há 1 - 14%,0 - 86%.
 
 
-Árvore de Decisão
+# Árvore de Decisão
 
 A árvore de Decisão é um tipo de algoritmo de aprendizagem de máquina supervisionado que se baseia na ideia de divisão dos dados em grupos homogêneos
 
